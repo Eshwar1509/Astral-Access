@@ -1,0 +1,23 @@
+{
+  "name": "google_meet",
+  "version": "1.0.0",
+  "description": "",
+  "main": "App.js",
+  "scripts": {
+    "ui" : "open-cli https://getsetmeet.onrender.com/actions.html",
+    "start": "nodemon server.js",
+    "dev": "concurrently 'npm run ui' 'npm run start'"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^8.2.2",
+    "express": "^4.18.2",
+    "express-fileupload": "^1.4.1",
+    "socket.io": "^4.7.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1",
+    "open-cli": "^7.2.0"
+  }
+}
